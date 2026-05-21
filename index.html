@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <button id="btn-get-users">Get users</button>
+    <div id="loading" class="hidden">Loading...</div>
+    <div id="error" class="hidden">Failed to load users.</div>
+</div>
+
+<div id="controls" class="hidden controls-panel">
+    <input type="text" id="search-input" placeholder="Search by name, email, city...">
+
+    <select id="city-filter">
+        <option value="All">All cities</option>
+    </select>
+
+    <select id="sort-select">
+        <option value="default">Sort by...</option>
+        <option value="name">Name</option>
+        <option value="username">Username</option>
+        <option value="city">City</option>
+        <option value="company">Company</option>
+    </select>
+</div>
+
+<div id="users-container" class="users-grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
